@@ -1,0 +1,41 @@
+@import '../../less/_variables';
+
+.portfolio {
+    padding: 32px;
+
+    &__basics {
+        display: inline-block;
+        position: relative;
+    }
+
+    &__logo {
+        font-family: 'Encode Sans', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0 0 2px 0;
+    }
+
+    &__job-title {
+        color: @light-gray;
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0 0 8px;
+        text-align: right;
+    }
+
+    &__location {
+        color: @gray;
+        font-size: 12px;
+        font-weight: 300;
+        margin: 0;
+        text-align: right;
+    }
+
+    &__location-pin {
+        display: inline-block;
+        fill: @gray;
+        height: 12px;
+        margin-right: 4px;
+        width: 12px;
+    }
+}
