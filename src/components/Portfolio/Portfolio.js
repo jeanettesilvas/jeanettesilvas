@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './Portfolio.css';
 import { Code, Pin } from '../../icons';
+// import homeaway from '../../images/homeaway.svg';
 
 export class Portfolio extends Component {
     render() {
@@ -20,6 +21,10 @@ export class Portfolio extends Component {
                         <span>{'Bothell, WA'}</span>
                     </h3>
                 </div>
+
+                {/* <div className="portfolio__current">
+                    <img src={homeaway} alt="" width="300" height="100" />
+                </div> */}
             </div>
         );
     }
