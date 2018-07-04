@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './Portfolio.css';
-import { Code, Pin } from '../../icons';
+import { Code } from '../../icons';
 
 export class Portfolio extends Component {
     render() {
