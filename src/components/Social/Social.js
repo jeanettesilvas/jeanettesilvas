@@ -1,27 +1,23 @@
 import React, { Component } from 'react';
 
 import './Social.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeLinkedIcon } from '../';
+import { data } from '../../data/data';
 
 export class Social extends Component {
-    render() {
-        return (
-            <ul className="social">
-                <li>
-                    <a
-                        href="https://github.com/jeanettesilvas"
-                        className="social__link"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                    >
-                        <FontAwesomeIcon
-                            icon={faGithub}
-                            className="social__icon"
-                        />
-                    </a>
+    get links() {
+        let links = data.social.map((link, index) => {
+            return (
+                <li className="social__account" key={`${link.brand}-${index}`}>
+                    <FontAwesomeLinkedIcon url={link.url} icon={link.brand} />
                 </li>
-            </ul>
-        );
+            );
+        });
+
+        return links;
+    }
+
+    render() {
+        return <ul className="social">{this.links}</ul>;
     }
 }
