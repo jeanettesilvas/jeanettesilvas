@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './Portfolio.css';
 import { Code } from '../../icons';
+import { Social } from '../Social/Social';
 
 export class Portfolio extends Component {
     render() {
@@ -18,6 +19,7 @@ export class Portfolio extends Component {
                         {'Bothell, WA'}
                     </h3> */}
                 </div>
+                <Social />
             </div>
         );
     }
