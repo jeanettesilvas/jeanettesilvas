@@ -13,6 +13,7 @@ export class Portfolio extends Component {
                     <h2 className="portfolio__job-title">
                         {'frontend developer'}
                     </h2>
+                    <h2 className="portfolio__hobby-title">&amp; {'maker'}</h2>
                     <Code className="portfolio__logo-icon" />
                     {/* <h3 className="portfolio__location">
                         <Pin className="portfolio__location-pin" />
