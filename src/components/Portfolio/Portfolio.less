@@ -54,7 +54,8 @@
     &__hello {
         background-color: #f7f7f7;
         border-radius: 5px;
-        margin: @spacing-3x @spacing-6x;
+        margin: @spacing-3x auto;
+        max-width: 600px;
         padding: @spacing-4x;
     }
 
@@ -74,7 +75,7 @@
         }
     }
 
-    @media screen and (max-width: 567px) {
+    @media screen and (max-width: 700px) {
         &__hello {
             margin: @spacing-3x;
         }
