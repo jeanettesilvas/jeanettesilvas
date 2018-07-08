@@ -23,8 +23,24 @@ export class Portfolio extends Component {
 
                 <section className="portfolio__hello">
                     <h2 className="portfolio__hello-title">
-                        {'hello'}
-                        <span className="portfolio__hello-period">{'.'}</span>
+                        <span className="portfolio__hello-letter portfolio__hello-h">
+                            {'h'}
+                        </span>
+                        <span className="portfolio__hello-letter portfolio__hello-e">
+                            {'e'}
+                        </span>
+                        <span className="portfolio__hello-letter portfolio__hello-l">
+                            {'l'}
+                        </span>
+                        <span className="portfolio__hello-letter portfolio__hello-l-2">
+                            {'l'}
+                        </span>
+                        <span className="portfolio__hello-letter portfolio__hello-o">
+                            {'o'}
+                        </span>
+                        <span className="portfolio__hello-letter portfolio__hello-period">
+                            {'.'}
+                        </span>
                     </h2>
 
                     <p className="portfolio__hello-p">
