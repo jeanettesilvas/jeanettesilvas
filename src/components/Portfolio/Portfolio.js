@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './Portfolio.css';
 import { Code } from '../../icons';
 import { Social } from '../Social/Social';
+import { Hello } from '../Hello/Hello';
 
 export class Portfolio extends Component {
     render() {
@@ -21,40 +22,7 @@ export class Portfolio extends Component {
                     </h3> */}
                 </section>
 
-                <section className="portfolio__hello">
-                    <h2 className="portfolio__hello-title">
-                        <span className="portfolio__hello-letter portfolio__hello-h">
-                            {'h'}
-                        </span>
-                        <span className="portfolio__hello-letter portfolio__hello-e">
-                            {'e'}
-                        </span>
-                        <span className="portfolio__hello-letter portfolio__hello-l">
-                            {'l'}
-                        </span>
-                        <span className="portfolio__hello-letter portfolio__hello-l-2">
-                            {'l'}
-                        </span>
-                        <span className="portfolio__hello-letter portfolio__hello-o">
-                            {'o'}
-                        </span>
-                        <span className="portfolio__hello-letter portfolio__hello-period">
-                            {'.'}
-                        </span>
-                    </h2>
-
-                    <p className="portfolio__hello-p">
-                        {
-                            'My web dev career started out writing Java but I quickly became focused on frontend work. I love making interfaces that are enjoyable to use and look great. I’ve done some design work but I prefer working with great designers to help implement their vision.'
-                        }
-                    </p>
-                    <p className="portfolio__hello-p">
-                        {
-                            'While I’ve worked with different languages and frameworks, I’m currently working with React both for work and for personal use. I spend a lot of my off time making goofy pop culture stuff out of yarn and have started combining my day and night jobs with some in-progress projects I hope to reveal within the year.'
-                        }
-                    </p>
-                </section>
-
+                <Hello />
                 <Social />
             </div>
         );

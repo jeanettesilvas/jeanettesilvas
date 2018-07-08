@@ -1,20 +1,5 @@
 @import '../../less/_variables';
 
-@hello-left-0: 0;
-@hello-left-1: @hello-left-0 + 24px;
-@hello-left-2: @hello-left-1 + 22px;
-@hello-left-3: @hello-left-2 + 12px;
-@hello-left-4: @hello-left-3 + 12px;
-@hello-left-period: @hello-left-4 + 22px;
-
-@hello-delay-0: 0.5s;
-@hello-delay-spacing: 0.07s;
-@hello-delay-1: @hello-delay-0 + @hello-delay-spacing;
-@hello-delay-2: @hello-delay-1 + @hello-delay-spacing;
-@hello-delay-3: @hello-delay-2 + @hello-delay-spacing;
-@hello-delay-4: @hello-delay-3 + @hello-delay-spacing;
-@hello-delay-period: @hello-delay-4 + @hello-delay-spacing;
-
 .portfolio {
     &__basics {
         margin: 32px auto 0;
@@ -64,77 +49,6 @@
         height: 12px;
         margin-right: 4px;
         width: 12px;
-    }
-
-    &__hello {
-        background-color: #f7f7f7;
-        border-radius: 5px;
-        margin: @spacing-3x auto;
-        max-width: 600px;
-        padding: @spacing-4x;
-    }
-
-    &__hello-title {
-        font-size: 36px;
-        font-weight: 800;
-        height: 49px;
-        margin: 0 0 @spacing-2x;
-        position: relative;
-    }
-
-    &__hello-letter {
-        animation-duration: 0.3s;
-        animation-iteration-count: 1;
-        animation-name: bump;
-        position: absolute;
-    }
-
-    &__hello-letter:hover {
-        animation-iteration-count: infinite;
-    }
-
-    &__hello-h {
-        animation-delay: @hello-delay-0;
-    }
-
-    &__hello-e {
-        animation-delay: @hello-delay-1;
-        left: @hello-left-1;
-    }
-
-    &__hello-l {
-        animation-delay: @hello-delay-2;
-        left: @hello-left-2;
-    }
-
-    &__hello-l-2 {
-        animation-delay: @hello-delay-3;
-        left: @hello-left-3;
-    }
-
-    &__hello-o {
-        animation-delay: @hello-delay-4;
-        left: @hello-left-4;
-    }
-
-    &__hello-period {
-        animation-delay: @hello-delay-period;
-        color: @red;
-        left: @hello-left-period;
-    }
-
-    @keyframes bump {
-        from {
-            margin-top: 0;
-        }
-
-        50% {
-            margin-top: -5px;
-        }
-
-        to {
-            margin-top: 0;
-        }
     }
 
     &__hello-p {
