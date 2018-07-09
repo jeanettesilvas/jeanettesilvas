@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 import './Portfolio.css';
 import { Code } from '../../icons';
-import { Social } from '../Social/Social';
-import { Hello } from '../Hello/Hello';
+import { DayJob, Hello, Social } from '../';
 
 export class Portfolio extends Component {
     render() {
@@ -23,6 +22,7 @@ export class Portfolio extends Component {
                 </section>
 
                 <Hello />
+                <DayJob />
                 <Social />
             </div>
         );
