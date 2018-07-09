@@ -10,8 +10,8 @@
 
     &__background {
         background-color: @dark-gray;
-        color: #fff;
-        padding: @spacing-3x;
+        color: @white;
+        padding: @spacing-3x @spacing-3x @spacing-4x;
     }
 
     &__ha {
@@ -24,9 +24,15 @@
     }
 
     &__job-title {
-        color: #9b9b9b;
+        color: @light-gray-text;
         font-size: 14px;
         font-weight: 300;
         margin-top: -7px;
+    }
+
+    @media screen and (max-width: 700px) {
+        &__title {
+            margin: @spacing-3x;
+        }
     }
 }

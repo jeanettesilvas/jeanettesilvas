@@ -1,0 +1,45 @@
+@import '../../less/_variables';
+
+.job-time-period {
+    color: @light-gray-text;
+    font-weight: 200;
+    margin: @spacing-3x 0 0;
+    width: 250px;
+
+    &__date-range {
+        font-size: 12px;
+        font-weight: 200;
+        margin: 0;
+    }
+
+    &__team {
+        color: @white;
+        font-weight: 200;
+        margin: 0 0 @spacing-2x;
+    }
+
+    &__description {
+        margin-bottom: @spacing-3x;
+    }
+
+    &__tools-title {
+        color: @white;
+        margin-bottom: @spacing-1x;
+    }
+
+    &__tools {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__tool {
+        border: 1px solid @gray;
+        border-radius: 15px;
+        font-size: 12px;
+        margin: 0 @spacing-1x @spacing-1x 0;
+        padding: 4px @spacing-1x;
+    }
+}

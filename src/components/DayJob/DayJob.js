@@ -2,6 +2,7 @@ import React from 'react';
 
 import homeaway from '../../images/homeaway.svg';
 
+import { JobTimePeriod } from '../';
 import './DayJob.css';
 
 export function DayJob() {
@@ -20,6 +21,8 @@ export function DayJob() {
                     <div className="day-job__job-title">
                         {'Senior Software Developer'}
                     </div>
+
+                    <JobTimePeriod />
                 </div>
             </div>
         </section>
