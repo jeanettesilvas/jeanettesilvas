@@ -1,30 +1,42 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './JobTimePeriod.css';
 
-export function JobTimePeriod() {
-    return (
-        <section className="job-time-period">
-            <h3 className="job-time-period__date-range">{'2018'}</h3>
-            <h1 className="job-time-period__team">{'Stay Experience'}</h1>
-            <p className="job-time-period__description">
-                {
-                    'Currently working on revamping the emails for travelers who have requested a reservation through to their stay at the property.'
-                }
-            </p>
+export class JobTimePeriod extends Component {
+    static propTypes = {
+        dateRange: PropTypes.string.isRequired,
+        summary: PropTypes.string.isRequired,
+        tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+        teamName: PropTypes.string.isRequired,
+    };
 
-            <h5 className="job-time-period__tools-title">{'Tools'}</h5>
+    get tags() {
+        let { tags } = this.props;
+        let tagListItems;
 
-            <ul className="job-time-period__tools">
-                <li className="job-time-period__tool">{'react'}</li>
-                <li className="job-time-period__tool">{'less'}</li>
-                <li className="job-time-period__tool">{'litmus'}</li>
-                <li className="job-time-period__tool">{'html emails'}</li>
-                <li className="job-time-period__tool">{'sketch'}</li>
-                <li className="job-time-period__tool">{'mocha'}</li>
-                <li className="job-time-period__tool">{'chai'}</li>
-                <li className="job-time-period__tool">{'enzyme'}</li>
-            </ul>
-        </section>
-    );
+        tagListItems = tags.map((tag, index) => {
+            return (
+                <li className="job-time-period__tag" key={`tag-${index}`}>
+                    {tag}
+                </li>
+            );
+        });
+
+        return tagListItems;
+    }
+
+    render() {
+        let { dateRange, summary, teamName } = this.props;
+
+        return (
+            <section className="job-time-period">
+                <h3 className="job-time-period__date-range">{dateRange}</h3>
+                <h1 className="job-time-period__team">{teamName}</h1>
+                <p className="job-time-period__description">{summary}</p>
+
+                <ul className="job-time-period__tags">{this.tags}</ul>
+            </section>
+        );
+    }
 }

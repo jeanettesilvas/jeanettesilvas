@@ -4,14 +4,14 @@
     &__title {
         font-family: @handwriting-font;
         font-weight: 400;
-        margin: @spacing-6x auto @spacing-2x;
-        max-width: 600px;
+        margin: @spacing-6x 0 @spacing-2x;
+        text-align: center;
     }
 
     &__background {
         background-color: @dark-gray;
         color: @white;
-        padding: @spacing-3x @spacing-3x @spacing-4x;
+        padding: @spacing-3x @spacing-5x @spacing-4x;
     }
 
     &__ha {
@@ -19,8 +19,8 @@
     }
 
     &__content {
-        margin: 0 auto;
-        max-width: 600px;
+        max-width: 1200px;
+        padding: 0 @spacing-4x;
     }
 
     &__job-title {
@@ -30,9 +30,24 @@
         margin-top: -7px;
     }
 
+    &__time-periods {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
     @media screen and (max-width: 700px) {
         &__title {
             margin: @spacing-3x;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        &__content {
+            padding: 0;
         }
     }
 }
