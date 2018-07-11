@@ -17,6 +17,7 @@ export let data = {
                 'chai',
                 'enzyme',
                 'i18n',
+                'invision',
             ],
         },
         {
@@ -38,6 +39,7 @@ export let data = {
                 'jquery',
                 'jasmine',
                 'i18n',
+                'invision',
             ],
         },
         {
@@ -55,8 +57,9 @@ export let data = {
                 'jsp',
                 'java',
                 'jstl',
-                'stripes templating',
+                'stripes',
                 'fireworks',
+                'invision',
             ],
         },
         {
@@ -74,8 +77,9 @@ export let data = {
                 'jsp',
                 'java',
                 'jstl',
-                'stripes templating',
+                'stripes',
                 'fireworks',
+                'invision',
             ],
         },
     ],
