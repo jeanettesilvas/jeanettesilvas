@@ -1,0 +1,44 @@
+@import '../../less/_variables';
+
+.northwest-stitch {
+    margin: 0 auto;
+    max-width: 1000px;
+
+    &__logo {
+        display: block;
+        margin: 0 0 @spacing-3x;
+        transform: scale(0.9);
+        -webkit-transform-origin-x: 0;
+    }
+
+    &__sections {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    &__section {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 400px;
+
+        &--with-padding {
+            padding: @spacing-3x @spacing-6x;
+        }
+    }
+
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__image-container {
+        height: 165px;
+        margin: @spacing-1x;
+    }
+}

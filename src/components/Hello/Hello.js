@@ -21,7 +21,7 @@ export function Hello() {
             </p>
             <p className="hello__p">
                 {
-                    'While I’ve worked with different languages and frameworks, I’m currently working with React both for work and for personal use. I spend a lot of my off time making goofy pop culture stuff out of yarn and have started combining my day and night jobs with some in-progress projects I hope to reveal over the next year.'
+                    'While I’ve worked with different languages and frameworks, I’m currently working with React both for work and for personal use. I spend a lot of my off time making goofy pop culture stuff out of yarn and have started two web projects I hope to reveal over the next year.'
                 }
             </p>
         </section>

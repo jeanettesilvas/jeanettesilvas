@@ -32,7 +32,7 @@ export class DayJob extends Component {
     render() {
         return (
             <section className="day-job">
-                <h2 className="day-job__title">{'Day job'}</h2>
+                <h2 className="day-job__title section-title">{'Day job'}</h2>
 
                 <div className="day-job__background">
                     <div className="day-job__content">
