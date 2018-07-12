@@ -11,7 +11,7 @@ export class Portfolio extends Component {
                 <section className="portfolio__basics">
                     <h1 className="portfolio__logo">{'Jeanette Silvas'}</h1>
                     <h2 className="portfolio__job-title">
-                        {'frontend developer'}
+                        {'front end developer'}
                     </h2>
                     <h2 className="portfolio__hobby-title">&amp; {'maker'}</h2>
                     <Code className="portfolio__logo-icon" />

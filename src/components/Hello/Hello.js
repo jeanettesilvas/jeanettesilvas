@@ -16,7 +16,7 @@ export function Hello() {
 
             <p className="hello__p">
                 {
-                    'My web dev career started out writing Java but I quickly became focused on frontend work. I love making interfaces that are enjoyable to use and look great. I’ve done some design work but I prefer working with great designers to help implement their vision.'
+                    'My web dev career started out writing Java but I quickly became focused on front end work. I love making interfaces that are enjoyable to use and look great. I’ve done some design work but I prefer working with great designers to help implement their vision.'
                 }
             </p>
             <p className="hello__p">
