@@ -23,6 +23,8 @@ export let data = {
                 'react',
                 'sketch',
                 'vs code',
+                'eslint',
+                'prettier',
             ],
         },
         {
@@ -51,6 +53,8 @@ export let data = {
                 'vs code',
                 'github',
                 'java',
+                'eslint',
+                'jshint',
             ],
         },
         {
@@ -75,6 +79,7 @@ export let data = {
                 'grunt',
                 'google maps',
                 'github',
+                'jshint',
             ],
         },
         {
