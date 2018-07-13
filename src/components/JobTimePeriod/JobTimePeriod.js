@@ -15,6 +15,7 @@ export class JobTimePeriod extends Component {
         let { tags } = this.props;
         let tagListItems;
 
+        tags.sort();
         tagListItems = tags.map((tag, index) => {
             return (
                 <li className="job-time-period__tag" key={`tag-${index}`}>
