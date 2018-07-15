@@ -5,3 +5,4 @@ export * from './Highlight/Highlight';
 export * from './JobTimePeriod/JobTimePeriod';
 export * from './NorthwestStitch/NorthwestStitch';
 export * from './Social/Social';
+export * from './Tag/Tag';

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
+
+import { Tag } from '../';
 
 import './JobTimePeriod.css';
 
@@ -21,24 +22,21 @@ export class JobTimePeriod extends Component {
         let { tags } = this.props;
         let tagListItems;
         let highlightedText = this.props.highlightedText;
-        let className;
+        let highlighted = false;
 
         tags.sort();
-        tagListItems = tags.map((tag, index) => {
-            className = 'job-time-period__tag';
 
-            if (highlightedText) {
-                className = classnames(className, {
-                    'job-time-period__highlighted-tag': tag.includes(
-                        highlightedText
-                    ),
-                });
-            }
+        tagListItems = tags.map((tag, index) => {
+            highlighted = highlightedText
+                ? tag.includes(highlightedText)
+                : false;
 
             return (
-                <li className={className} key={`tag-${index}`}>
-                    {tag}
-                </li>
+                <Tag
+                    highlighted={highlighted}
+                    text={tag}
+                    key={`tag-${index}`}
+                />
             );
         });
 
