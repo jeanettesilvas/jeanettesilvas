@@ -1,3 +1,5 @@
 export let en_US = {
-    'current-job-title': 'front end developer',
+    currentJobTitle: 'front end developer',
+    maker: 'maker',
+    name: 'Jeanette Silvas',
 };

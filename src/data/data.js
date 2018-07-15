@@ -25,6 +25,7 @@ export let data = {
                 'vs code',
                 'eslint',
                 'prettier',
+                'jenkins',
             ],
         },
         {

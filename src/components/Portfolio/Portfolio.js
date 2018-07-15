@@ -13,11 +13,13 @@ export class Portfolio extends Component {
         return (
             <div className="portfolio">
                 <section className="portfolio__basics">
-                    <h1 className="portfolio__logo">{'Jeanette Silvas'}</h1>
+                    <h1 className="portfolio__logo">{this.text.name}</h1>
                     <h2 className="portfolio__job-title">
-                        {this.text['current-job-title']}
+                        {this.text.currentJobTitle}
                     </h2>
-                    <h2 className="portfolio__hobby-title">&amp; {'maker'}</h2>
+                    <h2 className="portfolio__hobby-title">
+                        &amp; {this.text.maker}
+                    </h2>
                     <Code className="portfolio__logo-icon" />
                 </section>
 
