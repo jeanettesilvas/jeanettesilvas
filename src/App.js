@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import "./App.css";
-import { Portfolio } from "./components/Portfolio/Portfolio";
+import React, { Component } from 'react';
+import './App.css';
+import { Portfolio } from './components/Portfolio/Portfolio';
 
 class App extends Component {
     render() {
