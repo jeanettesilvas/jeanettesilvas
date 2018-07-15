@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import { getText } from '../../data';
 
@@ -23,11 +24,19 @@ export class Highlight extends Component {
 
     text = getText();
 
-    handleKeyPress = event => {
+    clear = () => {
+        let value = '';
+        this.setState({ value });
+        this.props.onChange(value);
+    };
+
+    handleClearClick = event => {
+        this.clear();
+    };
+
+    handleKeyDown = event => {
         if (event.which === 27) {
-            let value = '';
-            this.setState({ value });
-            this.props.onChange(value);
+            this.clear();
         }
     };
 
@@ -38,18 +47,39 @@ export class Highlight extends Component {
     };
 
     render() {
+        let iconClass = 'highlight__icon';
+        let searchIconClassName = classnames(iconClass, {
+            hidden: !!this.state.value,
+        });
+
+        let clearIconClassName = classnames(
+            iconClass,
+            'highlight__icon--clear',
+            {
+                hidden: !this.state.value,
+            }
+        );
+
         return (
             <div className="highlight">
                 <input
                     className="highlight__input"
-                    onChange={this.handleOnChange.bind(this)}
-                    onKeyDown={this.handleKeyPress.bind(this)}
+                    onChange={this.handleOnChange}
+                    onKeyDown={this.handleKeyDown}
                     placeholder={this.text.highlight}
                     type="text"
                     value={this.state.value}
                 />
 
-                <FontAwesomeIcon className="highlight__icon" icon={faSearch} />
+                <FontAwesomeIcon
+                    className={searchIconClassName}
+                    icon={faSearch}
+                />
+                <FontAwesomeIcon
+                    className={clearIconClassName}
+                    icon={faTimes}
+                    onClick={this.handleClearClick}
+                />
             </div>
         );
     }

@@ -26,3 +26,6 @@ h6 {
   margin: 48px 0 16px;
   text-align: center;
 }
+.hidden {
+  display: none;
+}
