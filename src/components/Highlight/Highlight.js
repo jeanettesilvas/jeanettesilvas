@@ -23,6 +23,14 @@ export class Highlight extends Component {
 
     text = getText();
 
+    handleKeyPress = event => {
+        if (event.which === 27) {
+            let value = '';
+            this.setState({ value });
+            this.props.onChange(value);
+        }
+    };
+
     handleOnChange = event => {
         let value = event.target.value;
         this.setState({ value });
@@ -34,9 +42,11 @@ export class Highlight extends Component {
             <div className="highlight">
                 <input
                     className="highlight__input"
-                    onChange={this.handleOnChange}
+                    onChange={this.handleOnChange.bind(this)}
+                    onKeyDown={this.handleKeyPress.bind(this)}
                     placeholder={this.text.highlight}
                     type="text"
+                    value={this.state.value}
                 />
 
                 <FontAwesomeIcon className="highlight__icon" icon={faSearch} />
