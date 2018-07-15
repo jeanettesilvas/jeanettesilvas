@@ -6,6 +6,7 @@ export let en_US = {
     helloParagraph2:
         'While I’ve worked with different languages and frameworks, I’m currently working with React both for work and for personal use. I spend a lot of my off time making pop culture collectibles out of yarn, and I have started using my dev skills to help with that work. I have two projects in the works that I hope to reveal over the next year.',
     helloTitle: 'hello.',
+    highlight: 'highlight',
     homeawayJobTitle: 'Senior Software Developer',
     maker: 'maker',
     name: 'Jeanette Silvas',

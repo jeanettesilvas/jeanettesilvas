@@ -7,6 +7,10 @@ import './DayJob.css';
 import { data, getText } from '../../data';
 
 export class DayJob extends Component {
+    state = {
+        highlightedText: '',
+    };
+
     text = getText();
 
     get timePeriods() {
@@ -20,6 +24,7 @@ export class DayJob extends Component {
                 <li key={key} className="day-job__time-period">
                     <JobTimePeriod
                         dateRange={dateRange}
+                        highlightedText={this.state.highlightedText}
                         summary={summary}
                         tags={tags}
                         teamName={teamName}
@@ -30,6 +35,10 @@ export class DayJob extends Component {
 
         return timePeriods;
     }
+
+    handleHighlightChange = highlightedText => {
+        this.setState({ highlightedText });
+    };
 
     render() {
         return (
@@ -58,7 +67,7 @@ export class DayJob extends Component {
                                 </div>
                             </div>
 
-                            <Highlight />
+                            <Highlight onChange={this.handleHighlightChange} />
                         </div>
 
                         <ul className="day-job__time-periods">
