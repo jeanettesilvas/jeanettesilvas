@@ -4,7 +4,35 @@ import classnames from 'classnames';
 import { getText } from '../../data/text';
 import './Hello.css';
 
+function getKey(index) {
+    let keyPrefix = 'helloParagraph';
+    return `${keyPrefix}${index}`;
+}
+
 export class Hello extends Component {
+    text = getText();
+
+    get paragraphs() {
+        let text = this.text;
+        let index = 1;
+        let key = getKey(index);
+        let paragraphs = [];
+        let paragraph = text[key];
+
+        while (!!paragraph) {
+            paragraphs.push(
+                <p key={key} className="hello__p">
+                    {paragraph}
+                </p>
+            );
+            index += 1;
+            key = getKey(index);
+            paragraph = text[key];
+        }
+
+        return paragraphs;
+    }
+
     get title() {
         let title = this.text.helloTitle.split('');
         let delay = 0.5;
@@ -35,23 +63,11 @@ export class Hello extends Component {
         return letters;
     }
 
-    text = getText();
-
     render() {
         return (
             <section className="hello">
                 <h2 className="hello__title">{this.title}</h2>
-
-                <p className="hello__p">
-                    {
-                        'My web dev career started out writing Java but I quickly became focused on front end work. I love making interfaces that are enjoyable to use and look great. I’ve done some design work but I prefer working with great designers to help implement their vision.'
-                    }
-                </p>
-                <p className="hello__p">
-                    {
-                        'While I’ve worked with different languages and frameworks, I’m currently working with React both for work and for personal use. I spend a lot of my off time making goofy pop culture stuff out of yarn and have started two web projects I hope to reveal over the next year.'
-                    }
-                </p>
+                {this.paragraphs}
             </section>
         );
     }
