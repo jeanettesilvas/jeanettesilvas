@@ -27,12 +27,13 @@
         &__content {
             margin: 0 auto;
             max-height: 400px;
-            padding: @spacing-2x @spacing-2x 0 0;
+            padding: @spacing-2x 0 0 0;
             width: 600px;
         }
 
         &__content-left,
         &__content-right {
+            box-sizing: border-box;
             width: 50%;
             overflow: hidden;
         }

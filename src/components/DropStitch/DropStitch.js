@@ -38,7 +38,7 @@ export function DropStitch() {
                         className="drop-stitch__screenshot"
                         src={dropstitchscreenshot}
                         alt=""
-                        width="300"
+                        width="280"
                     />
                 </div>
             </div>
