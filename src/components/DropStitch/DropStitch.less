@@ -5,11 +5,7 @@
         border: 1px solid #eee;
         border-radius: 4px;
         display: flex;
-        margin: 0 auto;
-        max-height: 400px;
-        overflow: hidden;
-        padding: @spacing-2x @spacing-2x 0 0;
-        width: 600px;
+        flex-wrap: wrap;
     }
 
     &__img {
@@ -22,13 +18,38 @@
         border-radius: 4px;
     }
 
-    &__content-left,
-    &__content-right {
-        width: 50%;
-    }
-
     &__content-left {
         padding: @spacing-4x @spacing-3x;
         text-align: center;
+    }
+
+    @media screen and (min-width: 701px) {
+        &__content {
+            margin: 0 auto;
+            max-height: 400px;
+            padding: @spacing-2x @spacing-2x 0 0;
+            width: 600px;
+        }
+
+        &__content-left,
+        &__content-right {
+            width: 50%;
+            overflow: hidden;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        margin: @spacing-3x;
+
+        &__content-right {
+            height: 300px;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        &__screenshot {
+            display: block;
+            margin: 0 auto;
+        }
     }
 }
