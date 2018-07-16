@@ -1,6 +1,7 @@
 @import './src/less/_variables';
 
 .App {
+    box-sizing: border-box;
     color: @text-color;
     font-family: @base-font;
 }
@@ -30,6 +31,15 @@ h6 {
     font-size: 30px;
     font-weight: 400;
     margin: @spacing-6x 0 @spacing-2x;
+    text-align: center;
+}
+
+.section-title-footnote {
+    color: @light-gray-text;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 200;
+    margin: -@spacing-2x 0 @spacing-2x;
     text-align: center;
 }
 

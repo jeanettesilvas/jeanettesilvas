@@ -10,4 +10,6 @@ export let en_US = {
     homeawayJobTitle: 'Senior Software Developer',
     maker: 'maker',
     name: 'Jeanette Silvas',
+    slowly: '(slowly but surely)',
+    wip: 'WIP',
 };

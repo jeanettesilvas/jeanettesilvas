@@ -1,0 +1,34 @@
+@import '../../less/_variables';
+
+.drop-stitch {
+    &__content {
+        border: 1px solid #eee;
+        border-radius: 4px;
+        display: flex;
+        margin: 0 auto;
+        max-height: 400px;
+        overflow: hidden;
+        padding: @spacing-2x @spacing-2x 0 0;
+        width: 600px;
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto @spacing-2x;
+    }
+
+    &__screenshot {
+        border: 1px solid #eee;
+        border-radius: 4px;
+    }
+
+    &__content-left,
+    &__content-right {
+        width: 50%;
+    }
+
+    &__content-left {
+        padding: @spacing-4x @spacing-3x;
+        text-align: center;
+    }
+}

@@ -1,4 +1,5 @@
 export * from './DayJob/DayJob';
+export * from './DropStitch/DropStitch';
 export * from './FontAwesomeLinkedIcon/FontAwesomeLinkedIcon';
 export * from './Hello/Hello';
 export * from './Highlight/Highlight';

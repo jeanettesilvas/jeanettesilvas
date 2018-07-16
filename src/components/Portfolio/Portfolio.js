@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './Portfolio.css';
 import { Code } from '../../icons';
-import { DayJob, Hello, NorthwestStitch, Social } from '../';
+import { DayJob, DropStitch, Hello, NorthwestStitch, Social } from '../';
 
 import { getText } from '../../data/text';
 
@@ -27,6 +27,7 @@ export class Portfolio extends Component {
                 <Hello />
                 <DayJob />
                 <NorthwestStitch />
+                <DropStitch />
                 <Social />
             </div>
         );
