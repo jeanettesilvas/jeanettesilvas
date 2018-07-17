@@ -3,7 +3,6 @@ import React from 'react';
 import { getText } from '../../data/text';
 import dropstitch from '../../images/drop-stitch.svg';
 import dropstitchscreenshot from '../../images/drop-stitch-screenshot.png';
-import dropstitchtagline from '../../images/drop-stitch-tagline.svg';
 
 import './DropStitch.css';
 
@@ -21,17 +20,16 @@ export function DropStitch() {
                         src={dropstitch}
                         alt="Drop Stitch"
                     />
-                    <img
+                    {/* <img
                         className="drop-stitch__img"
                         src={dropstitchtagline}
                         alt="An easier way to follow craft patterns"
-                    />
+                    /> */}
+                    <h4 className="drop-stitch__tagline">
+                        {'An easier way to follow craft patterns'}
+                    </h4>
 
-                    <p>
-                        {
-                            'This is my dream project. It is slow going but I try to chip away at it daily. It is also a React project but the rest of the stack is still to be determined. I look forward to learning the things that will be needed beyond the front end.'
-                        }
-                    </p>
+                    <p>{text.dropStitchDescription}</p>
                 </div>
                 <div className="drop-stitch__content-right">
                     <img

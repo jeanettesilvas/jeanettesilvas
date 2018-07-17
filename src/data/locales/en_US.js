@@ -1,5 +1,7 @@
 export let en_US = {
     dayJobTitle: 'Day job',
+    dropStitchDescription:
+        "This is a big project that's slow going but I try to chip away at it as close to daily as I can. It is built with React but the back end is still to be determined. I'm looking forward to learning and figuring out the rest.",
     generalJobTitle: 'front end developer',
     helloParagraph1:
         'I started my web career as a Java developer but I quickly became focused on front end work. I love making interfaces that are enjoyable to use and look great. I’ve done some design work but I prefer working with great designers to help implement their vision.',
