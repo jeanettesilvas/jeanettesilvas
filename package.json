@@ -24,8 +24,7 @@
         "start-js": "react-scripts start",
         "build": "run-s -n build-css build-js",
         "build-js": "react-scripts build",
-        "test": "run-s -n build-css test-js",
-        "test-js": "react-scripts test --env=jsdom",
+        "test": "react-scripts test --env=jsdom",
         "build-css": "node-less-chokidar src",
         "watch-css": "node-less-chokidar src --watch",
         "eject": "react-scripts eject"
