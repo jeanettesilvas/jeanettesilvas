@@ -48,9 +48,13 @@ export class Highlight extends Component {
 
     render() {
         let iconClass = 'highlight__icon';
-        let searchIconClassName = classnames(iconClass, {
-            hidden: !!this.state.value,
-        });
+        let searchIconClassName = classnames(
+            iconClass,
+            'highlight__icon--search',
+            {
+                hidden: !!this.state.value,
+            }
+        );
 
         let clearIconClassName = classnames(
             iconClass,
