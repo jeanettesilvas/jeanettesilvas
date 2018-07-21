@@ -35,7 +35,7 @@ export class Highlight extends Component {
     };
 
     handleKeyDown = event => {
-        if (event.which === 27) {
+        if (event.keyCode === 27) {
             this.clear();
         }
     };
