@@ -40,4 +40,15 @@ describe('#render', () => {
             1
         );
     });
+
+    it('clears the field when clicking the clear button', () => {
+        const wrapper = shallow(<Highlight />);
+        wrapper
+            .find('.highlight__input')
+            .simulate('change', { target: { value: 'asdf' } });
+
+        wrapper.find('.highlight__icon--clear').simulate('click');
+
+        expect(wrapper.find('.highlight__input').text()).toEqual('');
+    });
 });
