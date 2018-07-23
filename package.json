@@ -39,7 +39,8 @@
             "!**/vendor/**",
             "!**/build/**",
             "!**/coverage/**",
-            "!**/registerServiceWorker.js"
+            "!**/registerServiceWorker.js",
+            "!**/index.js"
         ]
     }
 }
