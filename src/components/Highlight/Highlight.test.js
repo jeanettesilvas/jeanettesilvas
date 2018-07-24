@@ -71,15 +71,5 @@ describe('<Highlight />', () => {
 
             expect(wrapper.find('.highlight__input').text()).toEqual('');
         });
-
-        // it('clears the field when pressing the escape button', () => {
-        //     const wrapper = mount(<Highlight />);
-        //     wrapper
-        //         .find('.highlight__input')
-        //         .simulate('change', { target: { value: 'asdf' } });
-
-        //     wrapper.simulate('keyDown', { keyCode: 27 });
-        //     expect(wrapper.find('.highlight__input').text()).toEqual('');
-        // });
     });
 });

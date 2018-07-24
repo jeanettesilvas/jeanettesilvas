@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<JobTimePeriod /> #render renders correctly 1`] = `
+<section
+  className="job-time-period"
+>
+  <h3
+    className="job-time-period__date-range"
+  >
+    2018
+  </h3>
+  <h1
+    className="job-time-period__team"
+  >
+    team
+  </h1>
+  <p
+    className="job-time-period__description"
+  >
+    summary text
+  </p>
+  <ul
+    className="job-time-period__tags"
+  >
+    <li
+      className="tag tag-undefined"
+    >
+      foo
+    </li>
+    <li
+      className="tag tag-undefined tag--highlighted"
+    >
+      react
+    </li>
+  </ul>
+</section>
+`;

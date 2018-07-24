@@ -1,0 +1,546 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DayJob /> #render renders correctly 1`] = `
+<section
+  className="day-job"
+>
+  <h2
+    className="day-job__title section-title"
+  >
+    Day job
+  </h2>
+  <div
+    className="day-job__background"
+  >
+    <div
+      className="day-job__content"
+    >
+      <div
+        className="day-job__header"
+      >
+        <div
+          className="day-job__title"
+        >
+          <a
+            href="https://www.homeaway.com"
+            target="blank"
+          >
+            <img
+              alt="HomeAway"
+              className="day-job__ha"
+              src="homeaway.svg"
+            />
+          </a>
+          <div
+            className="day-job__job-title"
+          >
+            Senior Software Developer
+          </div>
+        </div>
+        <div
+          className="highlight"
+        >
+          <input
+            className="highlight__input"
+            onChange={[Function]}
+            onKeyDown={[Function]}
+            placeholder="highlight tags"
+            type="text"
+            value=""
+          />
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-search fa-w-16 highlight__icon highlight__icon--search"
+            data-icon="search"
+            data-prefix="fas"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-times fa-w-11 highlight__icon highlight__icon--clear hidden"
+            data-icon="times"
+            data-prefix="fas"
+            onClick={[Function]}
+            role="img"
+            style={Object {}}
+            viewBox="0 0 352 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+      <ul
+        className="day-job__time-periods"
+      >
+        <li
+          className="day-job__time-period"
+        >
+          <section
+            className="job-time-period"
+          >
+            <h3
+              className="job-time-period__date-range"
+            >
+              2018
+            </h3>
+            <h1
+              className="job-time-period__team"
+            >
+              Stay Experience
+            </h1>
+            <p
+              className="job-time-period__description"
+            >
+              Currently working on revamping the emails for travelers who have requested a reservation through to their stay at the property.
+            </p>
+            <ul
+              className="job-time-period__tags"
+            >
+              <li
+                className="tag tag-undefined"
+              >
+                chai
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                enzyme
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                eslint
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                foundation for emails
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                github
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                gulp
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                html emails
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                i18n
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                invision
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                jenkins
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                less
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                litmus
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                mocha
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                node.js
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                npm
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                prettier
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                react
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                sketch
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                vs code
+              </li>
+            </ul>
+          </section>
+        </li>
+        <li
+          className="day-job__time-period"
+        >
+          <section
+            className="job-time-period"
+          >
+            <h3
+              className="job-time-period__date-range"
+            >
+              2015-2017
+            </h3>
+            <h1
+              className="job-time-period__team"
+            >
+              Property Page
+            </h1>
+            <p
+              className="job-time-period__description"
+            >
+              Worked on new features, maintenance, and many A/B tests for the property detail page. Started with Backbone then helped start the conversion to React before switching teams.
+            </p>
+            <ul
+              className="job-time-period__tags"
+            >
+              <li
+                className="tag tag-undefined"
+              >
+                backbone
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                bootstrap
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                chai
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                enzyme
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                eslint
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                github
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                i18n
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                invision
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                jasmine
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                java
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                jquery
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                jshint
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                less
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                mocha
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                node.js
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                npm
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                proctor
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                react
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                redux
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                sketch
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                vs code
+              </li>
+            </ul>
+          </section>
+        </li>
+        <li
+          className="day-job__time-period"
+        >
+          <section
+            className="job-time-period"
+          >
+            <h3
+              className="job-time-period__date-range"
+            >
+              2014
+            </h3>
+            <h1
+              className="job-time-period__team"
+            >
+              Search results
+            </h1>
+            <p
+              className="job-time-period__description"
+            >
+              Teams became more page focused and I started on the search results page. Worked on new features, maintenance, and A/B tests.
+            </p>
+            <ul
+              className="job-time-period__tags"
+            >
+              <li
+                className="tag tag-undefined"
+              >
+                backbone
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                bootstrap
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                fireworks
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                github
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                google maps
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                grunt
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                i18n
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                invision
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                jasmine
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                java
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                jquery
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                jshint
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                jsp
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                jstl
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                proctor
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                stripes
+              </li>
+            </ul>
+          </section>
+        </li>
+        <li
+          className="day-job__time-period"
+        >
+          <section
+            className="job-time-period"
+          >
+            <h3
+              className="job-time-period__date-range"
+            >
+              2013
+            </h3>
+            <h1
+              className="job-time-period__team"
+            >
+              Traveler
+            </h1>
+            <p
+              className="job-time-period__description"
+            >
+              Hired to help bring a new template online. Once complete, continued working on the template and the template used for the home page, search results, and property page.
+            </p>
+            <ul
+              className="job-time-period__tags"
+            >
+              <li
+                className="tag tag-undefined"
+              >
+                backbone
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                bootstrap
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                fireworks
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                github
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                i18n
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                invision
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                jasmine
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                java
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                jquery
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                jsp
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                jstl
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                proctor
+              </li>
+              <li
+                className="tag tag-undefined"
+              >
+                stripes
+              </li>
+            </ul>
+          </section>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+`;
