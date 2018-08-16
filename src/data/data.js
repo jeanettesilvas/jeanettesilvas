@@ -63,7 +63,7 @@ export let data = {
             key: 'time-period-2',
             summary:
                 'Teams became more page focused and I started on the search results page. Worked on new features, maintenance, and A/B tests.',
-            teamName: 'Search results',
+            teamName: 'Search Results',
             tags: [
                 'backbone',
                 'bootstrap',

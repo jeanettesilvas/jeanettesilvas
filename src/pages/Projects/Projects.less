@@ -1,0 +1,63 @@
+@import '../../less/_variables';
+
+.projects-and-tests {
+    padding: @spacing-4x @spacing-6x;
+}
+
+.projects {
+    &__title {
+        font-weight: 900;
+        margin-bottom: @spacing-4x;
+    }
+
+    &__title-note {
+        color: @light-gray;
+        font-size: 16px;
+        font-weight: 200;
+        margin-left: @spacing-2x;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__list-item {
+        border-bottom: 1px solid @border-color;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: @spacing-4x;
+        padding-bottom: @spacing-4x;
+    }
+
+    &__details {
+        margin-right: @spacing-4x;
+        width: 250px;
+    }
+
+    &__term {
+        color: @light-gray;
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    &__definition {
+        font-size: 14px;
+        margin: 0 0 @spacing-2x 0;
+    }
+
+    &__image {
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+        display: block;
+        max-width: 100%;
+        width: 400px;
+    }
+
+    &__image-footnote {
+        display: block;
+        color: @light-gray;
+        font-size: 12px;
+        margin-top: @spacing-1x;
+    }
+}

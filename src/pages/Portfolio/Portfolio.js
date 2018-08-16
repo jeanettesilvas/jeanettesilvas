@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 
 import './Portfolio.css';
 import { Code } from '../../icons';
-import { DayJob, DropStitch, Hello, NorthwestStitch, Social } from '../';
+import {
+    DayJob,
+    DropStitch,
+    Hello,
+    NorthwestStitch,
+    Social,
+} from '../../components';
 
 import { getText } from '../../data/text';
 
