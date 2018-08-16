@@ -1,6 +1,9 @@
 @import '../../less/_variables';
 
+// not an ideal setup for less file. temporary.
+
 .projects-and-tests {
+    margin: 0 auto;
     padding: @spacing-4x @spacing-6x;
 }
 
@@ -27,6 +30,7 @@
         border-bottom: 1px solid @border-color;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         margin-bottom: @spacing-4x;
         padding-bottom: @spacing-4x;
     }
@@ -59,5 +63,27 @@
         color: @light-gray;
         font-size: 12px;
         margin-top: @spacing-1x;
+    }
+}
+
+.experiments {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__list-item {
+        border: 1px solid @border-color;
+        border-radius: 5px;
+        margin: 0 @spacing-2x @spacing-2x 0;
+        padding: @spacing-1x @spacing-2x;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    .projects-and-tests {
+        width: 800px;
     }
 }
