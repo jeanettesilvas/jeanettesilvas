@@ -18,17 +18,44 @@
   }
 
   &__links {
+    border-top: 1px solid #ddd;
+    column-gap: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 16px;
     justify-items: center;
     list-style: none;
     margin: 0 auto;
-    padding: 0;
+    padding: 32px 0 0 0;
     width: 200px;
   }
 
   &__brand-icon {
     color: #999;
+    transition-property: color;
+    transition-duration: .2s;
+  
+    &--linkedin {
+      &:hover {
+        color: #0073B0;
+      }
+    }
+
+    &--github {
+      &:hover {
+        color: #24292e;
+      }
+    }
+
+    &--twitter {
+      &:hover {
+        color: rgb(29, 161, 242);
+      }
+    }
+
+    &--instagram {
+      &:hover {
+        color: #1a1414;
+      }
+    }
   }
 }

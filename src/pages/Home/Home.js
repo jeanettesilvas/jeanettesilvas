@@ -16,7 +16,7 @@ export const Home = () => {
             target="_blank"
           >
             <FontAwesomeIcon
-              className="fa-lg home__brand-icon"
+              className="fa-lg home__brand-icon home__brand-icon--linkedin"
               icon={['fab', 'linkedin-in']}
             />
           </a>
@@ -28,7 +28,7 @@ export const Home = () => {
             target="_blank"
           >
             <FontAwesomeIcon
-              className="fa-lg home__brand-icon"
+              className="fa-lg home__brand-icon home__brand-icon--github"
               icon={['fab', 'github']}
             />
           </a>
@@ -40,7 +40,7 @@ export const Home = () => {
             target="_blank"
           >
             <FontAwesomeIcon
-              className="fa-lg home__brand-icon"
+              className="fa-lg home__brand-icon home__brand-icon--twitter"
               icon={['fab', 'twitter']}
             />
           </a>
@@ -52,7 +52,7 @@ export const Home = () => {
             target="_blank"
           >
             <FontAwesomeIcon
-              className="fa-lg home__brand-icon"
+              className="fa-lg home__brand-icon home__brand-icon--instagram"
               icon={['fab', 'instagram']}
             />
           </a>
